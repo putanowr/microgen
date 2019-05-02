@@ -1,0 +1,18 @@
+This directory contains CMake modules for finding the component the FEMDK
+depends on.
+
+Files in this directory should be used by linking to them from the source
+subdirectories.
+
+Unless stated otherwise for licencing conditions see COPYING-CMAKE-SCRIPTS.
+
+
+Acknowledgment:
+---------------
+
+The following modules has been created outside of FEMDK project and 
+are copyrihted by their copyringht holders:
+
+FindSILO.cmake    -- Lars Baehren lbaehren@gmail.com, 
+FindSuperLU.cmake -- DUNE project http://www.dune-project.org/
+

@@ -1,0 +1,21 @@
+AutoGen Definitions options;
+prog_name     = "microgen";
+prog_title    = "3D explicit pore microstructure generator";
+long_opts;
+homerc = "$HOME/.microgen";
+argument = "[ConfigFile]";
+
+/*
+ *  Include definitions of output flags
+ */
+#include $DEFAULT_OPTS/output_options.def
+#include options_def/micro_options.def
+
+flag = {
+    name = "selftest";
+    description = "Perform self testing by running built-in unit tests.";
+    doc = "Perform self testing by running built-in unit tests.";
+};
+
+#include $DEFAULT_OPTS/logger_options.def
+#include $DEFAULT_OPTS/misc_options.def

@@ -1,0 +1,80 @@
+/* This file contains definitions of flags for managing the logger.
+ * You should include this file in the proper options definition file.
+ */
+
+flag = {
+  name="logsect";
+  documentation;
+  descrip= "Logger parameters:";
+};
+
+flag = {
+    name = "log-savelog";
+    descrip = "Save log to logfile";
+    arg-type = boolean;
+    arg-default = 0;
+};
+
+flag = {
+    name = "log-keep";
+    descrip = "Keep loggfile even on successful return";
+    arg-type = boolean;
+    arg-default = 1;
+};
+
+flag = {
+    name = "log-filename";
+    descrip = "Name of the logfile";
+    arg-type = string;
+    arg-default = "/tmp/femdk.log";
+};
+
+flag = {
+    name = "log-level";
+    descrip = "importance of log messages, see syslog(3)";
+    arg-type = keyword;
+    keyword = "emerg";
+    keyword = "fatal";
+    keyword = "alert";
+    keyword = "crit";
+    keyword = "error";
+    keyword = "warn";
+    keyword = "notice";
+    keyword = "info";
+    keyword = "debug";
+    keyword = "notset";
+    arg_default = "warn";
+};
+
+flag = {
+    name = "log-format";
+    descrip = "Format template for log messages";
+    doc = "Format template for log messages";
+    arg_type = string; 
+    arg_default = "%R %p %c %x: %m%n";
+};
+
+flag = {
+    name = "femdk_parent_logger";
+    descrip = "Name of the parent logger for FEMDK";
+    doc = "Name of the parent logger for FEMDK";
+    arg_type = string; 
+    arg_default = "";
+};
+
+flag = {
+    name = "femdk-log-level";
+    descrip = "importance of log messages, see syslog(3)";
+    arg-type = keyword;
+    keyword = "emerg";
+    keyword = "fatal";
+    keyword = "alert";
+    keyword = "crit";
+    keyword = "error";
+    keyword = "warn";
+    keyword = "notice";
+    keyword = "info";
+    keyword = "debug";
+    keyword = "notset";
+    arg_default = "warn";
+};

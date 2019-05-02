@@ -1,0 +1,46 @@
+/*
+ * Copyright (c) 2014-2019 Roman Putanowicz 
+ * 
+ * This file is distributed on "BSD 3-Clause License" as approved by 
+ * the OSI Board. For licensing terms see LICENSE file distributed 
+ * with this file.
+ */
+/**
+ *  This file provides FEMDK configuration informations
+ */
+
+#ifndef FEMDK_CONFIG_HXX
+#define FEMDK_CONFIG_HXX
+
+#define FEMDK_LOGGER_NAME "FEMDK"
+
+// the configured options and settings for Tutorial
+#define FEMDK_VERSION_MAJOR    @FEMDK_VERSION_MAJOR@
+#define FEMDK_VERSION_MINOR    @FEMDK_VERSION_MINOR@
+#define FEMDK_VERSION_REV      @FEMDK_VERSION_REV@
+#define FEMDK_VERSION_STRING  "@FEMDK_VERSION@"
+
+/** Defined if FEMDK was built with support for Arabica library */
+#cmakedefine FEMDK_HAVE_ARABICA
+/** Defined if FEMDK was built with support for Boost.Process library */
+#cmakedefine FEMDK_HAVE_BOOSTPROCESS
+/** Defined if FEMDK was built with support for FeBio library */
+#cmakedefine FEMDK_HAVE_FEBIO
+/** Defined if FEMDK was built with support for GetFEM++ library */
+#cmakedefine FEMDK_HAVE_GETFEM
+/** Defined if FEMDK was built with support for Gmsh library */
+#cmakedefine FEMDK_HAVE_GMSH
+/** Defined if FEMDK was built with support for log4cpp library */
+#cmakedefine FEMDK_HAVE_LOG4CPP
+/** Defined if FEMDK was built with support for MAdLib library */
+#cmakedefine FEMDK_HAVE_MADLIB
+/** Defined if FEMDK was built with support for MOAB library */
+#cmakedefine FEMDK_HAVE_MOAB
+/** Defined if FEMDK was built with support for Teng library */
+#cmakedefine FEMDK_HAVE_TENG
+/** Defined if FEMDK was built with support for TochnogLib library */
+#cmakedefine FEMDK_HAVE_TOCHNOGLIB
+/** Defined if FEMDK was built with support for VTK library */
+#cmakedefine FEMDK_HAVE_VTK
+
+#endif /* FEMDK_CONFIG_HXX */

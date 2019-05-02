@@ -1,0 +1,2 @@
+#!/bin/bash
+rm -fr CMakeCache.txt CMakeFiles Makefile cmake_install.cmake microgen        microgen_config.h microgen_options.c microgen_options.h femdk_config.h

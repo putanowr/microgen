@@ -1,0 +1,34 @@
+/* This file contains definitions of flags for general management of output.
+ * You should include this file in the proper options definition file.
+ */
+
+flag = {
+  name="outputsect";
+  documentation;
+  descrip= "Output parameters:";
+};
+
+flag = {
+    name = "out-policy";
+    descrip = "output policy - 'abort','override','addtag'";
+    arg-type = keyword;
+    keyword ="override";
+    keyword = "addtag";
+    keyword = "abort";
+    arg_default = "abort";
+};
+
+flag = {
+  name = "out-dir";
+  descrip = "output directory";
+  arg-type = string;
+  arg_default = "./";
+};
+
+flag = {
+  name = "out-file";
+  value = "o";
+  descrip = "output file";
+  arg-type = string;
+  arg_default = "/dev/stdout";
+};

@@ -1,0 +1,7 @@
+#ifndef _MICROGEN_HXX 
+#define _MICROGEN_HXX
+
+#define MICROGEN_VERSION_MAJOR @microgen_VERSION_MAJOR@
+#define MICROGEN_VERSION_MINOR @microgen_VERSION_MINOR@
+#define MYLOGGER() femdk::logging::getLogger("microgen")
+#endif /* _MICROGEN_HXX */

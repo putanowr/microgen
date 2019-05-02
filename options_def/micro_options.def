@@ -1,0 +1,17 @@
+/*-----------------------------------------------------------------------*/
+#ifndef SKIP_SEC_DOC
+#ifndef SKIP_MICRO_SEC_DOC
+flag = {
+  name="microsect";
+  documentation;
+  descrip= "Microstructure parameters:";
+};
+#endif
+#endif 
+
+flag = {
+    name = "micro-size";
+    descrip = "microstructure size INTxINTxINT";
+    doc = "SXxSYxSZ";
+    arg_type = string;
+};

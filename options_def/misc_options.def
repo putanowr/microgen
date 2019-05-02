@@ -1,0 +1,25 @@
+/* Definition of miscellaneous generic options.
+ * 
+ */
+flag = {
+  name="miscsec";
+  documentation;
+  descrip= "Miscellaneous parameters:";
+};
+
+flag = {
+    name      = dry-run;
+    descrip   = "Display parameters value and exit";
+};
+
+flag = {
+    name      = echo-params;
+    descrip   = "Display parameters value";
+};
+
+flag = {
+    name      = save-params;
+    descrip   = "Save default parameters in a file";
+    arg_type  = string;
+    arg_default = "";
+};
